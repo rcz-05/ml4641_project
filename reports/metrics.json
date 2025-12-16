@@ -1,0 +1,103 @@
+{
+  "direction_model": {
+    "metrics": {
+      "accuracy": 0.6041666666666666,
+      "precision": 0.6071428571428571,
+      "recall": 0.68,
+      "f1": 0.6415094339622641,
+      "test_samples": 48,
+      "roc_auc": 0.537391304347826
+    },
+    "confusion_matrix": [
+      [
+        12,
+        11
+      ],
+      [
+        8,
+        17
+      ]
+    ]
+  },
+  "direction_model_baseline": {
+    "metrics": {
+      "accuracy": 0.4583333333333333,
+      "precision": 0.46153846153846156,
+      "recall": 0.24,
+      "f1": 0.3157894736842105,
+      "test_samples": 48,
+      "roc_auc": 0.4173913043478261
+    },
+    "confusion_matrix": [
+      [
+        16,
+        7
+      ],
+      [
+        19,
+        6
+      ]
+    ]
+  },
+  "direction_model_gbdt": {
+    "metrics": {
+      "accuracy": 0.5,
+      "precision": 0.5142857142857142,
+      "recall": 0.72,
+      "f1": 0.6,
+      "test_samples": 48,
+      "roc_auc": 0.44347826086956527
+    },
+    "confusion_matrix": [
+      [
+        6,
+        17
+      ],
+      [
+        7,
+        18
+      ]
+    ]
+  },
+  "direction_model_extratrees": {
+    "metrics": {
+      "accuracy": 0.4791666666666667,
+      "precision": 0.5,
+      "recall": 0.48,
+      "f1": 0.4897959183673469,
+      "test_samples": 48,
+      "roc_auc": 0.4469565217391304
+    },
+    "confusion_matrix": [
+      [
+        11,
+        12
+      ],
+      [
+        13,
+        12
+      ]
+    ]
+  },
+  "sentiment_model": {
+    "accuracy": 0.8031837916063675,
+    "f1_macro": 0.7118221274046254,
+    "confusion_matrix": [
+      [
+        38,
+        30,
+        16
+      ],
+      [
+        2,
+        412,
+        15
+      ],
+      [
+        5,
+        68,
+        105
+      ]
+    ]
+  }
+}

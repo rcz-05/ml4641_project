@@ -60,7 +60,8 @@ def train_sentiment_model(df: pd.DataFrame, test_size: float = 0.2, random_state
     pipeline = Pipeline(
         steps=[
             ("tfidf", TfidfVectorizer(max_features=5000, ngram_range=(1, 2), stop_words="english")),
-            ("clf", LogisticRegression(max_iter=2000, solver="lbfgs", multi_class="auto")),
+            # multi_class is auto by default; omit explicit arg for sklearn >=1.8 compatibility
+            ("clf", LogisticRegression(max_iter=2000, solver="lbfgs")),
         ]
     )
 

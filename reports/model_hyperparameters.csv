@@ -1,0 +1,5 @@
+model,type,features,notes
+rf_sentiment,classification,technical + sentiment,"n_estimators=400, max_depth=8, min_samples_split=4, class_weight=balanced"
+rf_technical_only,classification,technical only,"n_estimators=400, max_depth=8, min_samples_split=4, class_weight=balanced"
+gradient_boosting,classification,technical + sentiment,"default GradientBoostingClassifier, random_state from cfg"
+extra_trees,classification,technical + sentiment,"n_estimators=400, class_weight=balanced, randomized thresholds"
